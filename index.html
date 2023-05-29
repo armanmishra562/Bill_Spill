@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bill Spill</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+</head>
+<body>
+    
+    <h3 class="title1">Bill</h3>
+    <h3 class="title2">Spill</h3>
+    <div class="cencontainer">
+        <p class="box1text">Bill</p>
+        <input type="text" id="amount" value="0" onclick="resetValue()">
+        <p class="box1text">Select Tip %</p>
+        <div class="tipflex">
+            <div class="flex-item">
+                <button onclick="doTipping(5)">5 %</button>
+            </div>
+            <div class="flex-item">
+                <button onclick="doTipping(10)">10 %</button>
+            </div>
+            <div class="flex-item">
+                <button onclick="doTipping(15)">15 %</button>
+            </div>
+            <div class="flex-item">
+                <button onclick="doTipping(25)">25 %</button>
+            </div>
+            <div class="flex-item">
+                <button onclick="doTipping(50)">50 %</button>
+            </div>
+            <div class="flex-item">
+                <button onclick="doTipping(75)">75 %</button>
+            </div>
+        </div>
+        <p class="box1text">Number of People</p>
+        <div class="people">
+            <img src="Vector.png" alt="Avatar">
+            <div class="count">
+                <h3 id="cont">0</h3>
+            </div>
+            <div class="increment">
+                <button onclick="doIncrement()">+</button>
+            </div>
+            <div class="count1">
+                <h3 id="cont1">0</h3>
+            </div>
+            <div class="decrement">
+                <button onclick="doDecrement()">-</button>
+            </div>
+        </div>
+        <div class="generate">
+            <button onclick="Generate()">Generate Bill</button>
+        </div>
+        <div class="rigcontainer">
+            <div class="tipmenu">
+                <p>Tip Amount</p>
+                <h2 id="TotalTip">0.00</h2>
+            </div>
+            <div class="totalmenu">
+                <p>Total Amount</p>
+                <h2 id="TotalAmount">0.00</h2>
+            </div>
+            <div class="resetbutn">
+                <button id="Rstbtn" disabled="disabled" onclick="ResetAll()">RESET</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
